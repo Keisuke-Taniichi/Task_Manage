@@ -76,10 +76,22 @@ p {
 #header-link {
   color: white;
   font-weight: bold;
+  float: left;
+   display: inline-block;
   }
   
 #header-link:hover{
   color: gray;
+}
+
+.login-link{
+  color: white;
+}
+
+.dropdown-icon{
+  background-color: gainsboro;
+  padding-left: 20px;
+  font-size: 0.9em;
 }
 
 
