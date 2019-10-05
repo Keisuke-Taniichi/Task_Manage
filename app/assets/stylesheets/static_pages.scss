@@ -1,3 +1,30 @@
-// Place all the styles related to the StaticPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+div.top-page{
+    float: left;
+    margin-right: 100px;
+    margin-left: 100px;
+    text-align: left;
+}
+
+div.top-page p{
+    font-size: 0.5em;
+}
+
+div.top-page input[type="email"] {
+        width: 400px;
+    }
+
+div.top-page input[type="password"] {
+        width: 400px;
+    }
+
+#account-cr{
+    background-color: green;
+}
+
+div.top-page.col-md-6 {
+  vertical-align: middle;
+  text-align: left;
+}
