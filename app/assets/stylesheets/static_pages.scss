@@ -1,15 +1,22 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+#aaa{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 4.0em;
+    margin-top: 50px;
+}
+
 div.top-page{
     float: left;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 40px;
+    margin-left: 40px;
     text-align: left;
 }
 
 div.top-page p{
-    font-size: 0.5em;
+    font-size: 1.5em;
 }
 
 div.top-page input[type="email"] {
