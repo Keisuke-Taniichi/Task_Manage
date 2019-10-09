@@ -7,8 +7,11 @@
   <p>TaskAppは簡易ToDo管理ツールです。</p>
   <p>↓↓初めてのご利用↓↓</p>
 
-  
+  <% if logged_in? %>
+    <%= link_to "アカウント作成", signup_path, class: "btn btn-lg btn-primary", id: "account-cr", disabled: :true %>
+  <% else %>
     <%= link_to "アカウント作成", signup_path, class: "btn btn-lg btn-primary", id: "account-cr" %>
+  <% end %>
     
   </center>
 </div>
@@ -30,8 +33,12 @@
         <%= f.check_box :remember_me, id: "remember-me" %>
         <span>ログイン情報を記憶する</span>
       <% end %>
-
-      <%= f.submit "Log In", class: "btn btn-primary btn-block btn-login", id: "login-btn" %>
+      
+      <% if logged_in? %>
+        <%= f.submit "ログイン状態です", class: "btn btn-primary btn-block btn-login", id: "login-btn", disabled: :true %>
+      <% else %>
+        <%= f.submit "ログイン", class: "btn btn-primary btn-block btn-login", id: "login-btn" %>
+      <% end %>
     <% end %>
 
   
